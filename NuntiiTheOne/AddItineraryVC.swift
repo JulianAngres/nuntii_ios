@@ -292,7 +292,7 @@ class AddItineraryVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("Landmark Request")
             
             var request = URLRequest(url: url)
-            request.setValue("4986bafec1msh5a1d233cf14a74cp12fdccjsn5a0a72605af9", forHTTPHeaderField: "x-rapidapi-key")
+            request.setValue("", forHTTPHeaderField: "x-rapidapi-key")
             request.setValue("aerodatabox.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")
             let completionHandler = { [self](data: Data?, response: URLResponse?, error: Error?) -> Void in
                 
